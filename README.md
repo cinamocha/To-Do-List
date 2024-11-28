@@ -6,5 +6,6 @@ Flaskを使用しWebアプリにしました。
 app.pyがデータ構造やアプリケーションの挙動を設定しています。  
 templatesフォルダindex.htmlがアプリ内に表示される文字を設定しています。  
 
+Python3.13.0  
 Flask 3.1.0  
 Flask-SQLAlchemy 3.1.1
