@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>To-Do List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+
+    <!--タスク追加フォーム-->
+    <form action="/add" method="POST">
+      <input type="text" name="content" placeholder="タスクを追加" required>
+      <button type="submit">追加</button>
+    </form>
+
+    <ul>
+      {% for task in tasks %}
+        <li>{{ task.content }}
+          <a href="/delete/{{ task.id }}">削除</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
